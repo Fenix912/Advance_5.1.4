@@ -8,9 +8,14 @@ spring:
   application:
     name: book-service
   config:
-    import: "optional:config-server:"
+    import: "optional:configserver:"
   profiles:
     active: native
   data:
     mongodb:
       database: root
+
+Lospring:
+  sleuth:
+    sampler:
+      probability: 2.0
